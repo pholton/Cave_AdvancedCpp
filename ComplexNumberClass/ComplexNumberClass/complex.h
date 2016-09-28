@@ -29,7 +29,7 @@ namespace cop {
 	};
 
 	// Left bitshift overloading
-	std::ostream &operator<<(std::ostream &out, const cop::Complex &c);
+	std::ostream &operator<<(std::ostream &out, const Complex &c);
 
 	// addition overloading
 	Complex operator+(const Complex &c1, const Complex &c2);
