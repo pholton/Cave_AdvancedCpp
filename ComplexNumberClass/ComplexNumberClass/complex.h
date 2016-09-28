@@ -14,7 +14,7 @@ namespace cop {
 		// Constructors and Destructors
 		Complex();
 		Complex(double real, double imaginary);
-		Complex(const Complex &other);  // Copy constructor
+		Complex(const Complex &other);
 		~Complex() {}
 
 		// Getters
