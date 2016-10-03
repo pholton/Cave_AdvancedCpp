@@ -37,12 +37,12 @@ bool match(std::string s) {
 	return s.size() == 3;
 }
 
-// (*match) passes the function pointer (match) to countStrings 
-int countStrings(std::vector<std::string> &texts, bool (*match)(std::string test)) {
+// (*funcMatch) passes the function pointer to countStrings 
+int countStrings(std::vector<std::string> &texts, bool (*funcMatch)(std::string test)) {
 	int count = 0;
-	for (int i = 0; i < texts.size(); i++) {
+	for (int i = 0; i < (int)texts.size(); i++) {
 		// call match function
-		if (match(texts[i])) {
+		if (funcMatch(texts[i])) {
 			count++;
 		}
 	}
